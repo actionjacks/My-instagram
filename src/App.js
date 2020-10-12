@@ -101,11 +101,11 @@ function App() {
       <div className="app__header">
         <img className="app__headerImage" src="../logo.png" alt="logo" />
         {user ? (
-          <Button onClick={() => auth.signOut()}>Logout</Button>
+          <Button onClick={() => auth.signOut()}>Log out</Button>
         ) : (
           <div className="app__loginContainer">
-            <Button onClick={() => setOpenSignIn(true)}>Zaloguj się</Button>
-            <Button onClick={() => setOpen(true)}>Zarejestruj się</Button>
+            <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
+            <Button onClick={() => setOpen(true)}>Register</Button>
           </div>
         )}
       </div>
@@ -194,7 +194,7 @@ function App() {
       {user ? (
         <ImageUpload username={user.displayName} />
       ) : (
-        <h2 className="app__bottom">Zaloguj sie aby dodać post</h2>
+        <h2 className="app__bottom">Log in to add a post</h2>
       )}
     </div>
   );
