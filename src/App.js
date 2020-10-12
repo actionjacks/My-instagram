@@ -191,7 +191,7 @@ function App() {
           />
         </div>
       </div>
-      {user?.displayName ? (
+      {user ? (
         <ImageUpload username={user.displayName} />
       ) : (
         <h2 className="app__bottom">Zaloguj sie aby dodać post</h2>
