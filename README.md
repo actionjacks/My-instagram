@@ -1,4 +1,4 @@
-## Project
+## Fake Istagram
 
 The application allows you to register an account, log in, post with a picture and comment on existing posts.
 Functions available after logging in.
